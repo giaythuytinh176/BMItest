@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<table border="1px solid black" cellspacing="0">
+    <tr>
+        <td>BMI</td>
+        <td>Interpretation</td>
+    </tr>
+    <tr>
+        <td>BMI < 18.5</td>
+        <td>Uderweight</td>
+    </tr>
+    <tr>
+        <td>18.5 &leq; BMI < 25.0</td>
+        <td>Normal</td>
+    </tr>
+    <tr>
+        <td>25.0 &leq; BMI < 30.0</td>
+        <td>Overweight</td>
+    </tr>
+    <tr>
+        <td>30.00 &leq; BMI</td>
+        <td>Obese</td>
+    </tr>
+
+
+
+
+</table>
+
+
+
+<script>
+    let height = prompt("Nhap chieu cao");
+    let weight = prompt("Nhap can nang");
+
+    let bmi = weight / ( height ^ 2 )
+
+
+    if (bmi < 18)
+    document.write("Underweight");
+    else if (bmi < 25.0)
+    document.write("Normal");
+    else if (bmi < 30.0)
+    document.write("Overweight");
+    else
+    document.write("Obese");
+
+
+
+</script>
+
+
+<style>
+    td {
+        width: 200px;
+        height: 100px;
+        text-align: center;
+    }
+
+
+</style>
+
+</body>
+</html>
